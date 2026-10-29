@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Anuj kumawat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">AK</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <button id="theme-toggle">☀️ Light Mode</button>
+</header>
+
+<main class="page-content">
+    <h1>My <span>Projects</span></h1>
+    <p class="subtitle">Things I'm building and learning</p>
+
+    <input type="search" id="project-search"
+           placeholder="Search projects...">
+
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+    </div>
+
+    <div class="cards project-grid">
+
+        <article class="card project-card" data-category="web">
+            <span class="project-icon">🌐</span>
+            <h2>My Portfolio</h2>
+            <p>A personal website showcasing my skills and education.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+            <p class="project-status">In Progress</p>
+        </article>
+
+        <article class="card project-card" data-category="java">
+            <span class="project-icon">☕</span>
+            <h2>Java Calculator</h2>
+            <p>A beginner project to practice Java programming.</p>
+            <div class="tags"><span>Java</span></div>
+            <p class="project-status">Planned</p>
+        </article>
+
+        <article class="card project-card" data-category="database">
+            <span class="project-icon">🗄️</span>
+            <h2>SQL Practice</h2>
+            <p>A collection of SQL queries for learning databases.</p>
+            <div class="tags"><span>SQL</span></div>
+            <p class="project-status">Learning</p>
+        </article>
+
+<article class="card project-card" data-category="java">
+    <span class="project-icon">📚</span>
+    <h2>Student Result Management System</h2>
+    <p>A Java project to manage student marks and results.</p>
+    <div class="tags"><span>Java</span></div>
+    <p class="project-status">Ongoing</p>
+</article>
+
+<article class="card project-card" data-category="java">
+    <span class="project-icon">🧮</span>
+    <h2>Java Calculator</h2>
+    <p>A Java calculator for basic arithmetic operations.</p>
+    <div class="tags"><span>Java</span></div>
+    <p class="project-status">Ongoing</p>
+</article>
+
+
+    </div>
+
+    <p id="no-projects" hidden>No matching projects found.</p>
+</main>
+
+<footer>
+    <p>© 2026 Anuj kumawat | MyPortfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
